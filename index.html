@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish Cwie Mie - Autentik & Nikmat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- AOS CSS untuk Animasi Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-gradient-to-r from-red-600 to-orange-500 shadow-md fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-1 min-w-0 pr-4">
+                    <h1 class="text-white font-bold text-lg sm:text-xl md:text-2xl tracking-wide truncate">Delish Cwie
+                        Mie</h1>
+                </div>
+
+                <!-- Menu Desktop (Sembunyi di Mobile) -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#hero" class="text-white hover:text-yellow-200 font-medium transition">Beranda</a>
+                    <a href="#menu" class="text-white hover:text-yellow-200 font-medium transition">Menu</a>
+                    <a href="login.html"
+                        class="bg-yellow-400 text-red-900 px-4 py-2 rounded-full font-bold hover:bg-yellow-300 transition shadow-sm">Login
+                        Admin</a>
+                </div>
+
+                <!-- Tombol Hamburger Mobile (Sembunyi di Desktop) -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-yellow-200 focus:outline-none">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dropdown Menu Mobile (Disembunyikan secara default) -->
+            <div id="mobile-menu" class="hidden md:hidden flex-col space-y-3 pb-4 pt-2 border-t border-red-500 mt-2">
+                <a href="#hero" class="block text-white hover:text-yellow-200 font-medium">Beranda</a>
+                <a href="#menu" class="block text-white hover:text-yellow-200 font-medium">Menu</a>
+                <a href="login.html"
+                    class="inline-block bg-yellow-400 text-red-900 px-4 py-2 rounded-full font-bold hover:bg-yellow-300 w-max shadow-sm">Login
+                    Admin</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-red-50 flex items-center min-h-[70vh]">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center md:text-left flex flex-col md:flex-row items-center gap-10">
+                <!-- Teks masuk dari kiri -->
+                <div class="md:w-1/2" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-red-700 leading-tight mb-4">
+                        Sensasi Gurih Nikmat <br> di Setiap Suapan
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 font-medium">Berbagai varian menu autentik dengan cita rasa
+                        spesial menantimu.</p>
+                    <a href="#menu"
+                        class="inline-block bg-gradient-to-r from-red-600 to-orange-500 text-white font-bold px-8 py-3 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition duration-300">Lihat
+                        Menu</a>
+                </div>
+                <!-- Gambar masuk dari kanan -->
+                <div class="md:w-1/2" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Piring Makanan" class="rounded-3xl border-4 border-yellow-400 object-cover h-80 w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h3 class="text-3xl font-bold text-red-700 mb-2">Daftar Menu Kami</h3>
+                    <p class="text-gray-500">Pilih hidangan favoritmu dari menu andalan kami.</p>
+                </div>
+
+                <!-- Grid Menu -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Article: Item 1 -->
+                    <article data-aos="fade-up" data-aos-delay="100"
+                        class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold text-gray-800">Cwi Mie Original</h4>
+                                <span
+                                    class="bg-yellow-400 text-red-900 font-bold px-3 py-1 rounded-lg animate-pulse">6k</span>
+                            </div>
+                            <p class="text-sm text-gray-500">Varian Mie rasa gurih nikmat dengan ayam tabur.</p>
+                        </div>
+                    </article>
+
+                    <!-- Article: Item 2 -->
+                    <article data-aos="fade-up" data-aos-delay="200"
+                        class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold text-gray-800">Cwi Mie Chili Oil</h4>
+                                <span
+                                    class="bg-yellow-400 text-red-900 font-bold px-3 py-1 rounded-lg animate-pulse">8k</span>
+                            </div>
+                            <p class="text-sm text-gray-500">Cwie mie dengan rasa pedas gurih khas chili oil.</p>
+                        </div>
+                    </article>
+
+                    <!-- Article: Item 3 -->
+                    <article data-aos="fade-up" data-aos-delay="300"
+                        class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="text-xl font-bold text-gray-800">Es Teh</h4>
+                                <span
+                                    class="bg-yellow-400 text-red-900 font-bold px-3 py-1 rounded-lg animate-pulse">5k</span>
+                            </div>
+                            <p class="text-sm text-gray-500">Es teh manis segar dengan gula asli.</p>
+                        </div>
+                    </article>
+
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-900 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Delish Cwie Mie</h2>
+            <p class="mb-2">Delivery Order: <a href="tel:081336232888"
+                    class="text-yellow-400 font-bold hover:underline">081 336 232 888</a></p>
+            <p class="text-sm text-red-200 mt-6">&copy; 2026 Delish Cwie Mie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AOS JS & Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100
+        });
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+    </script>
+</body>
+
+</html>
